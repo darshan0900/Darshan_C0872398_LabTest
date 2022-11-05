@@ -13,6 +13,9 @@
 		553E7C6C2915CC9D0057DE18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553E7C6A2915CC9D0057DE18 /* Main.storyboard */; };
 		553E7C6E2915CC9E0057DE18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553E7C6D2915CC9E0057DE18 /* Assets.xcassets */; };
 		553E7C712915CC9E0057DE18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553E7C6F2915CC9E0057DE18 /* LaunchScreen.storyboard */; };
+		553E7C7B2915D1710057DE18 /* StopwatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E7C7A2915D1710057DE18 /* StopwatchVC.swift */; };
+		553E7C7D2915D1920057DE18 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E7C7C2915D1920057DE18 /* TimerVC.swift */; };
+		553E7C7F2915E6AA0057DE18 /* StopwatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E7C7E2915E6AA0057DE18 /* StopwatchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		553E7C6D2915CC9E0057DE18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		553E7C702915CC9E0057DE18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		553E7C722915CC9E0057DE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		553E7C7A2915D1710057DE18 /* StopwatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchVC.swift; sourceTree = "<group>"; };
+		553E7C7C2915D1920057DE18 /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
+		553E7C7E2915E6AA0057DE18 /* StopwatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				553E7C6D2915CC9E0057DE18 /* Assets.xcassets */,
 				553E7C6F2915CC9E0057DE18 /* LaunchScreen.storyboard */,
 				553E7C722915CC9E0057DE18 /* Info.plist */,
+				553E7C7A2915D1710057DE18 /* StopwatchVC.swift */,
+				553E7C7C2915D1920057DE18 /* TimerVC.swift */,
+				553E7C7E2915E6AA0057DE18 /* StopwatchTableViewCell.swift */,
 			);
 			path = Darshan_C0872398_LabTest;
 			sourceTree = "<group>";
@@ -139,7 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				553E7C692915CC9D0057DE18 /* ViewController.swift in Sources */,
+				553E7C7F2915E6AA0057DE18 /* StopwatchTableViewCell.swift in Sources */,
+				553E7C7D2915D1920057DE18 /* TimerVC.swift in Sources */,
 				553E7C652915CC9D0057DE18 /* AppDelegate.swift in Sources */,
+				553E7C7B2915D1710057DE18 /* StopwatchVC.swift in Sources */,
 				553E7C672915CC9D0057DE18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
