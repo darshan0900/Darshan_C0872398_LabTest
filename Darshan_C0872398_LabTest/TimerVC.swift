@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TimerVC: UIViewController {
 
@@ -19,6 +20,7 @@ class TimerVC: UIViewController {
 	@IBOutlet weak var startLabel: UILabel!
 	private var countdown: Float = 60.0
 	private var timer: Timer?
+	private var player: AVAudioPlayer?
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,17 +36,25 @@ class TimerVC: UIViewController {
 		let startTap = UITapGestureRecognizer(target: self, action: #selector(onStartPress))
 		startView.addGestureRecognizer(startTap)
 		
+		prepareSound()
+		
     }
 	
-	@objc func onCancePress(_ skip: Bool = false) {
+	@objc func onCancePress(_ skip: Bool = false, _ end: Bool = false) {
 		datePicker.isUserInteractionEnabled = true
 		startLabel.text = "Start"
 		timer?.invalidate()
 		
 		if !skip {
+			datePicker.countDownDuration = 0
 			countdown = 60
 			progressView.setProgress(1, animated: true)
 			progressView.isHidden = true
+		}
+		if end {
+			playSound()
+		} else {
+			stopSound()
 		}
 		
 	}
@@ -60,6 +70,10 @@ class TimerVC: UIViewController {
 			}
 			timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true ){timer in
 				self.countdown -= 1
+				if self.countdown == 0 {
+					self.onCancePress(false, true)
+					return
+				}
 				let seconds = Float(self.countdown.truncatingRemainder(dividingBy: 60))
 				UIView.animate(withDuration: 0.5, animations: {
 					print(seconds)
@@ -82,8 +96,27 @@ class TimerVC: UIViewController {
 			onCancePress(true)
 		}
 			
-		
+	}
+	
+	func prepareSound() {
+		let url = Bundle.main.url(forResource: "IphoneAlarm", withExtension: "mp3")!
+		do {
+			try? AVAudioSession.sharedInstance().setCategory(.playback)
+			player = try AVAudioPlayer(contentsOf: url)
+		} catch let error {
+			print(error)
+		}
 	}
 
+	func playSound(){
+		player?.play()
+	}
+	
+	func stopSound(){
+		player?.pause()
+		player?.currentTime = 0
+	}
+	
+	
 }
 

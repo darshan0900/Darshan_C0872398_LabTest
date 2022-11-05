@@ -16,7 +16,22 @@
 		553E7C7B2915D1710057DE18 /* StopwatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E7C7A2915D1710057DE18 /* StopwatchVC.swift */; };
 		553E7C7D2915D1920057DE18 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E7C7C2915D1920057DE18 /* TimerVC.swift */; };
 		553E7C7F2915E6AA0057DE18 /* StopwatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E7C7E2915E6AA0057DE18 /* StopwatchTableViewCell.swift */; };
+		553E7C832915EC100057DE18 /* IphoneAlarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 553E7C822915EC100057DE18 /* IphoneAlarm.mp3 */; };
+		555D7DF42915F0B600F3CFB6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553E7C852915EF320057DE18 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		553E7C8D2915F0370057DE18 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		553E7C612915CC9D0057DE18 /* Darshan_C0872398_LabTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Darshan_C0872398_LabTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +45,8 @@
 		553E7C7A2915D1710057DE18 /* StopwatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchVC.swift; sourceTree = "<group>"; };
 		553E7C7C2915D1920057DE18 /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
 		553E7C7E2915E6AA0057DE18 /* StopwatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchTableViewCell.swift; sourceTree = "<group>"; };
+		553E7C822915EC100057DE18 /* IphoneAlarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = IphoneAlarm.mp3; sourceTree = "<group>"; };
+		553E7C852915EF320057DE18 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				555D7DF42915F0B600F3CFB6 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +66,7 @@
 			children = (
 				553E7C632915CC9D0057DE18 /* Darshan_C0872398_LabTest */,
 				553E7C622915CC9D0057DE18 /* Products */,
+				553E7C842915EF320057DE18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +91,17 @@
 				553E7C7A2915D1710057DE18 /* StopwatchVC.swift */,
 				553E7C7C2915D1920057DE18 /* TimerVC.swift */,
 				553E7C7E2915E6AA0057DE18 /* StopwatchTableViewCell.swift */,
+				553E7C822915EC100057DE18 /* IphoneAlarm.mp3 */,
 			);
 			path = Darshan_C0872398_LabTest;
+			sourceTree = "<group>";
+		};
+		553E7C842915EF320057DE18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				553E7C852915EF320057DE18 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +114,7 @@
 				553E7C5D2915CC9D0057DE18 /* Sources */,
 				553E7C5E2915CC9D0057DE18 /* Frameworks */,
 				553E7C5F2915CC9D0057DE18 /* Resources */,
+				553E7C8D2915F0370057DE18 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +165,7 @@
 			files = (
 				553E7C712915CC9E0057DE18 /* LaunchScreen.storyboard in Resources */,
 				553E7C6E2915CC9E0057DE18 /* Assets.xcassets in Resources */,
+				553E7C832915EC100057DE18 /* IphoneAlarm.mp3 in Resources */,
 				553E7C6C2915CC9D0057DE18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
